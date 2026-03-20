@@ -1,0 +1,20 @@
+body {
+  background-color: black;
+  color: lime;
+  font-family: Arial;
+}
+
+nav {
+  background-color: #111;
+  padding: 10px;
+}
+
+nav a {
+  color: cyan;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: red;
+}
