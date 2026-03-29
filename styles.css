@@ -83,6 +83,12 @@ input, textarea {
     border: 1px solid #00e5ff;
     color: white;
 }
+#message {
+    height: 200px;  
+    font-size: 16px; 
+    padding: 12px;   
+    box-sizing: border-box; 
+}
 
 /* Button */
 input[type="submit"] {
@@ -97,7 +103,7 @@ input[type="submit"]:hover {
     box-shadow: 0 0 12px #00e5ff;
 }
 
-/* HOVER EFFECT (extra polish) */
+
 .section:hover {
     box-shadow: 0 0 30px rgba(0, 229, 255, 0.5);
 }
