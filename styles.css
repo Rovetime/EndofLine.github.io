@@ -175,3 +175,11 @@ input[type="submit"]:hover {
 .red-theme h1 { text-shadow: 0 0 12px #ff3b3b; }
 .yellow-theme h1 { text-shadow: 0 0 12px #ffd60a; }
 .green-theme h1 { text-shadow: 0 0 12px #00ff9c; }
+
+#message {
+    width: 100%;       /* full width of container */
+    height: 250px;     /* taller box */
+    padding: 12px;     /* inner spacing */
+    font-size: 16px;   /* bigger text */
+    box-sizing: border-box; /* keeps padding inside width */
+}
