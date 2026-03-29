@@ -1,18 +1,19 @@
-/* Base page */
+/* Page setup */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #0a0f1c; /* dark background */
+    background-color: #0a0f1c;
     color: #e0e6ff;
 }
 
 /* Header */
 h1 {
     text-align: center;
+    font-size: 2.5rem;
     color: #00e5ff;
-    padding: 20px 0;
+    padding: 25px;
     margin: 0;
-    text-shadow: 0 0 10px #00e5ff;
+    text-shadow: 0 0 15px #00e5ff;
 }
 
 /* Navbar */
@@ -25,63 +26,146 @@ nav {
 
 nav a {
     color: #00e5ff;
-    margin: 0 15px;
+    margin: 0 20px;
     text-decoration: none;
-    font-weight: bold;
+    font-size: 1.1rem;
 }
 
 nav a:hover {
-    text-shadow: 0 0 8px #00e5ff;
+    text-shadow: 0 0 10px #00e5ff;
 }
 
-/* Sections (cards) */
+/* Sections (BOX MODEL HERE) */
 .section {
     background-color: #11182b;
-    margin: 30px auto;
-    padding: 20px;
+
+    /* BOX MODEL */
+    margin: 40px auto;        /* space outside */
+    padding: 25px;            /* space inside */
     width: 70%;
-    border-radius: 10px;
+
     border: 1px solid #00e5ff;
-    box-shadow: 0 0 15px rgba(0, 229, 255, 0.2);
+    border-radius: 12px;
+
+    /* SHADOW */
+    box-shadow: 0 0 20px rgba(0, 229, 255, 0.25);
 }
 
 /* Section titles */
 .section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
     color: #00e5ff;
 }
 
-/* Lists */
-ul {
-    line-height: 1.8;
+/* Paragraphs */
+p {
+    font-size: 1.1rem;
+    line-height: 1.6;
 }
 
-/* Images & video */
-img, iframe {
+/* Images */
+img {
     width: 100%;
+    margin-top: 15px;
     border-radius: 10px;
     border: 1px solid #00e5ff;
 }
 
-/* Form styling */
-input {
+/* Forms */
+input, textarea {
     width: 100%;
-    padding: 8px;
-    margin-top: 5px;
+    padding: 10px;
+    margin-top: 8px;
+    margin-bottom: 15px;
+
     background-color: #0a0f1c;
     border: 1px solid #00e5ff;
     color: white;
 }
 
+/* Button */
 input[type="submit"] {
     background-color: #00e5ff;
     color: black;
+    font-size: 1rem;
     font-weight: bold;
     cursor: pointer;
 }
 
 input[type="submit"]:hover {
-    box-shadow: 0 0 10px #00e5ff;
+    box-shadow: 0 0 12px #00e5ff;
 }
+
+/* HOVER EFFECT (extra polish) */
 .section:hover {
-    box-shadow: 0 0 25px rgba(0, 229, 255, 0.4);
+    box-shadow: 0 0 30px rgba(0, 229, 255, 0.5);
 }
+/* RED THEME */
+.red-theme h1,
+.red-theme .section h2,
+.red-theme nav a {
+    color: #ff3b3b;
+}
+
+.red-theme nav {
+    border-bottom: 2px solid #ff3b3b;
+}
+
+.red-theme .section {
+    border: 1px solid #ff3b3b;
+    box-shadow: 0 0 20px rgba(255, 59, 59, 0.3);
+}
+
+.red-theme img,
+.red-theme input,
+.red-theme textarea {
+    border: 1px solid #ff3b3b;
+}
+
+/* YELLOW THEME */
+.yellow-theme h1,
+.yellow-theme .section h2,
+.yellow-theme nav a {
+    color: #ffd60a;
+}
+
+.yellow-theme nav {
+    border-bottom: 2px solid #ffd60a;
+}
+
+.yellow-theme .section {
+    border: 1px solid #ffd60a;
+    box-shadow: 0 0 20px rgba(255, 214, 10, 0.3);
+}
+
+.yellow-theme img,
+.yellow-theme input,
+.yellow-theme textarea {
+    border: 1px solid #ffd60a;
+}
+
+/* GREEN THEME */
+.green-theme h1,
+.green-theme .section h2,
+.green-theme nav a {
+    color: #00ff9c;
+}
+
+.green-theme nav {
+    border-bottom: 2px solid #00ff9c;
+}
+
+.green-theme .section {
+    border: 1px solid #00ff9c;
+    box-shadow: 0 0 20px rgba(0, 255, 156, 0.3);
+}
+
+.green-theme img,
+.green-theme input,
+.green-theme textarea {
+    border: 1px solid #00ff9c;
+}
+.red-theme h1 { text-shadow: 0 0 12px #ff3b3b; }
+.yellow-theme h1 { text-shadow: 0 0 12px #ffd60a; }
+.green-theme h1 { text-shadow: 0 0 12px #00ff9c; }
