@@ -83,13 +83,6 @@ input, textarea {
     border: 1px solid #00e5ff;
     color: white;
 }
-#message {
-    height: 200px;  
-    font-size: 16px; 
-    padding: 12px;   
-    box-sizing: border-box; 
-}
-
 /* Button */
 input[type="submit"] {
     background-color: #00e5ff;
@@ -176,10 +169,18 @@ input[type="submit"]:hover {
 .yellow-theme h1 { text-shadow: 0 0 12px #ffd60a; }
 .green-theme h1 { text-shadow: 0 0 12px #00ff9c; }
 
+#grid-image {
+    width: 500px;    
+    height: auto;    
+    display: block;
+    margin: 15px auto; 
+    border-radius: 10px;
+    border: 1px solid #00e5ff; 
+}
 #message {
-    width: 100%;       /* full width of container */
-    height: 250px;     /* taller box */
-    padding: 12px;     /* inner spacing */
-    font-size: 16px;   /* bigger text */
-    box-sizing: border-box; /* keeps padding inside width */
+    width: 100%;       
+    height: 250px;     
+    padding: 12px;     
+    font-size: 16px;   
+    box-sizing: border-box; 
 }
